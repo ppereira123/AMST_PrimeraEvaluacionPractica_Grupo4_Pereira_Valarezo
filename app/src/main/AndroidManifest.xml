@@ -12,6 +12,9 @@
         <activity android:name=".Acierto"></activity>
         <activity android:name=".Falla" />
         <activity android:name=".Preguntas" />
+
+        <activity android:name=".Preguntas"></activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

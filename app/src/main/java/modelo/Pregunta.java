@@ -2,7 +2,6 @@ package modelo;
 
 import android.media.Image;
 import android.widget.Button;
-
 public class Pregunta {
     private String pregunta;
     private String opcion1;
@@ -62,5 +61,15 @@ public class Pregunta {
 
     public void mostrarRespuestaCorrecta(Button b){
         //b.setBackgroundColor();
+    }
+
+    public Pregunta(String pregunta, String opcion1, String opcion2, String opcion3, String opcion4, String opcionCorrecta, Image imagen) {
+        this.pregunta = pregunta;
+        this.opcion1 = opcion1;
+        this.opcion2 = opcion2;
+        this.opcion3 = opcion3;
+        this.opcion4 = opcion4;
+        this.opcionCorrecta = opcionCorrecta;
+        this.imagen = imagen;
     }
 }
