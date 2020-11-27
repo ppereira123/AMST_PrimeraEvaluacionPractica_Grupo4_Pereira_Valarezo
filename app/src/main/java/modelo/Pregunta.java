@@ -2,7 +2,6 @@ package modelo;
 
 import android.media.Image;
 import android.widget.Button;
-
 public class Pregunta {
     private String pregunta;
     private String opcion1;
