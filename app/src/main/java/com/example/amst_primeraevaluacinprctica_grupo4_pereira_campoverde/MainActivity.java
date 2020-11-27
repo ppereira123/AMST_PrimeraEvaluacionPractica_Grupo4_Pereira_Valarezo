@@ -7,6 +7,9 @@ import android.media.Image;
 import android.os.Bundle;
 import android.os.Parcelable;
 
+import android.os.Bundle;
+import android.view.View;
+
 import modelo.Pregunta;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,5 +36,9 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("pregunta4", (Parcelable) pregunta4);
         intent.putExtra("pregunta5", (Parcelable) pregunta5);
 
+    }
+    public void empezar(View view) {
+        Intent intent2 = new Intent(this, Preguntas.class);
+        startActivity(intent2);
     }
 }
