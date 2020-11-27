@@ -11,6 +11,9 @@
         android:id="@+id/idPregunta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         tools:layout_editor_absoluteX="89dp"
@@ -19,7 +22,11 @@
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
+
+        android:layout_height="60"
+
         android:text="Button"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="388dp" />
@@ -27,7 +34,11 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
+
+        android:layout_height="60"
+
         android:text="Button"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="471dp" />
@@ -35,7 +46,11 @@
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
+
+        android:layout_height="60"
+
         android:text="Button"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="547dp" />
@@ -43,7 +58,11 @@
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
+
+        android:layout_height="60"
+
         android:text="Button"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="628dp" />
