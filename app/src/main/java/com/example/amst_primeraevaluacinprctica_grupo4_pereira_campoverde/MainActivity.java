@@ -3,14 +3,12 @@ package com.example.amst_primeraevaluacinprctica_grupo4_pereira_campoverde;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-<<<<<<< Updated upstream
 import android.media.Image;
 import android.os.Bundle;
 import android.os.Parcelable;
-=======
+
 import android.os.Bundle;
 import android.view.View;
->>>>>>> Stashed changes
 
 import modelo.Pregunta;
 
