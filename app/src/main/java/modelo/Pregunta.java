@@ -9,7 +9,7 @@ public class Pregunta {
     private String opcion3;
     private String opcion4;
     private String opcionCorrecta;
-    private String imagen;
+    private int imagen;
 
     public String getOpcion1() {
         return opcion1;
@@ -63,13 +63,21 @@ public class Pregunta {
         //b.setBackgroundColor();
     }
 
-    public Pregunta(String pregunta, String opcion1, String opcion2, String opcion3, String opcion4, String opcionCorrecta, String imagen) {
+    public Pregunta(String pregunta, String opcion1, String opcion2, String opcion3, String opcion4, String opcionCorrecta, int imagen) {
         this.pregunta = pregunta;
         this.opcion1 = opcion1;
         this.opcion2 = opcion2;
         this.opcion3 = opcion3;
         this.opcion4 = opcion4;
         this.opcionCorrecta = opcionCorrecta;
+        this.imagen = imagen;
+    }
+
+    public int getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(int imagen) {
         this.imagen = imagen;
     }
 }
