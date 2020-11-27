@@ -33,6 +33,7 @@
         android:layout_width="262dp"
         android:layout_height="49dp"
         android:layout_marginTop="48dp"
+        android:onClick="empezar"
         android:text="empezar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
