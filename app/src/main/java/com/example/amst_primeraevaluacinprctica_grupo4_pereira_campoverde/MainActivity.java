@@ -1,7 +1,9 @@
 package com.example.amst_primeraevaluacinprctica_grupo4_pereira_campoverde;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
@@ -18,24 +20,33 @@ public class MainActivity extends AppCompatActivity {
     Pregunta pregunta3;
     Pregunta pregunta4;
     Pregunta pregunta5;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        instrucciones alert= new instrucciones();
+        new AlertDialog.Builder(this)
+                .setTitle("Instrucciones")
+                .setMessage("Bienvenidos al juego de Mega Cine" +
+                        "\nPara ganar una entrada de cine debes responder 3 preguntas correctamente" +
+                        "\nMucha suerte!!!")
 
-        Pregunta pregunta1= new Pregunta("Quien es este personaje de la saga de Harry Potter?","Ron","Hermione","Voldemort","Draco Malfoy","Draco Malfoy","dracomalfoy");
-        Pregunta pregunta2= new Pregunta("Que personaje perdio una zapatilla","Blanca Nieves","La bella durmiente","Cenicienta","Rapunzel","Rapunzel","cenicienta");
-        Pregunta pregunta3= new Pregunta("Como se llama este personaje?","Chuwaka","Baby Yoda","Obi wan","Luke","Baby Yoda","babyyoda");
-        Pregunta pregunta4= new Pregunta("Como se llama la hermana de Luke SkyWalker?","Leia","Padme ","Jessica","Zola","Leia","leya");
-        Pregunta pregunta5= new Pregunta("Quien es la novia de la bestia?","Blanca Nieves","Bella","Malefica","Cenicienta","Bella","bella");
-        Intent intent= new Intent(this,Preguntas.class);
-        intent.putExtra("pregunta1", (Parcelable) pregunta1);
-        intent.putExtra("pregunta2", (Parcelable) pregunta2);
-        intent.putExtra("pregunta3", (Parcelable) pregunta3);
-        intent.putExtra("pregunta4", (Parcelable) pregunta4);
-        intent.putExtra("pregunta5", (Parcelable) pregunta5);
+                // Specifying a listener allows you to take an action before dismissing the dialog.
+                // The dialog is automaticall
+                // y dismissed when a dialog button is clicked.
+                .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Continue with delete operation
+                    }
+                })
 
+                // A null listener allows the button to dismiss the dialog and take no further action.
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
+}
+    public void empezar(View view) {
+        Intent intent2 = new Intent(this, Preguntas.class);
+        startActivity(intent2);
     }
     public void empezar(View view) {
         Intent intent2 = new Intent(this, Preguntas.class);
